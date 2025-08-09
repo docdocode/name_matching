@@ -22,7 +22,8 @@ def compare_name_parts(part1, part2):
 
     # fallback to fuzzy scoring for the part
     # Using fuzzy token ratio on parts directly
-    from fuzzywuzzy import fuzz
+    from rapidfuzz import fuzz
+
     return fuzz.ratio(part1, part2)
 
 
