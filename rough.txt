@@ -1,0 +1,29 @@
+I am want to create a name matching algorithm. 
+
+The purpose is I would like to onboard users in our platform. When an user wants to register in our platform, we check their name in the LSEG's World Check database through name matching at a certain threshold level of matches.
+
+Now the LSEG's World Check database is very long has millions of records. We would like to capture the records from the world check that are closely matching with our onboarding customer's name.
+
+In the current ongoing process, if we use world check's fuzzy name matching and keep the threshold of matching very low, then it return many matching results and resulting many false positives.
+
+And if we keep the threshold very high then there are chances to miss out the true positives.
+
+I would like to create our own in-house name matching algorithm that will extract the most ideal name matches from the world check database.
+
+Our customer are worldwide, there are chinese names, russian names and also english names, and also other languages. The algorithm should be able to detect the language and find the matched names from the world check database.
+
+The algorithm also need to know how to differentiate the name differences between Mohammad and Muhammad, for example.
+
+Currently while making the in-house matching algorithm, we can not use the WC's database to test the accuracy of the algorithm, but you may want to create a mock database against which we can compare the input i.e. the customer's name.
+
+You may involve multiple algorithm to create the master algorithm.
+
+You can add threshold values of different algorithm to reach the final results.
+
+Remember, the input customer's name can return several matches from the world check database, the goal is to find the qualitative matches, that will cause lesser false positive results without missing the true positives.
+
+Make the code in python, and create all the other necessary files needed to run the main.py file 
+Create a dummy database file against which the name matching will take place.
+Python code should ask for an input, where I will insert the customer's name, and it will create the results, that will involve all the matching names.
+
+You may add other additional fields / columns to support the matching results.

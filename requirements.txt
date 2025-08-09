@@ -1,0 +1,6 @@
+rapidfuzz
+langdetect
+python-Levenshtein
+pypinyin
+transliterate
+jellyfish
